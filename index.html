@@ -1,1 +1,30 @@
-<h1>RanCat</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+<script src="https://cdn.staticfile.net/vue/3.2.36/vue.global.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <template v-if="seen">
+        <h1>网站</h1>
+        <p>Google</p>
+        <p>Runoob</p>
+        <p>Taobao</p>
+    </template>
+</div>
+    
+<script>
+const app = {
+  data() {
+    return {
+      seen: true /* 改为false，信息就无法显示 */
+    }
+  }
+}
+ 
+Vue.createApp(app).mount('#app')
+</script>
+</body>
+</html>
